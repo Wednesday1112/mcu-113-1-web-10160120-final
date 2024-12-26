@@ -1,21 +1,35 @@
 nav {
-  background-color: var(--body-color);
   position: fixed;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 90px;
   line-height: 90px;
+  background-color: var(--body-color);
   padding-inline: 9vw;
-  display: flex;
-  justify-content: space-between;
+  transition: 0.3s;
+  z-index: 100;
   .nav-logo {
-    font-size: 24px;
+    position: relative;
+    span {
+      position: absolute;
+      top: -15px;
+      right: 20px;
+      font-size: 5em;
+      color: var(--text-color);
+    }
+  }
+  .nav-name {
+    font-size: 30px;
     font-weight: 600;
-    color: var(--logo-color);
+    color: var(--text-color-second);
   }
 
   ul {
     display: flex;
     list-style: none;
+    position: relative;
+
     .nav-link {
       text-decoration: none;
       color: var(--text-color);
@@ -27,14 +41,16 @@ nav {
     .active-link {
       position: relative;
       color: var(--first-color);
+      transition: 0.3;
       &::after {
-        position: absolute;
         content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -15px;
+        transform: translate(-50%, -50%);
         width: 5px;
         height: 5px;
         background-color: var(--first-color);
-        left: 50%;
-        bottom: -15px;
         border-radius: 50%;
       }
     }
