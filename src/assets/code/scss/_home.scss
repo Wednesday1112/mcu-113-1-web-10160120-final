@@ -6,27 +6,28 @@
   flex-direction: column;
   justify-content: center;
 
-  .tag > span {
-    background-color: var(--logo-color);
+  .home-text-card > span {
+    background-color: var(--third-color);
     color: var(--white-color);
-    padding: 3px 6px;
+    padding: 3px 8px;
     font-size: 12px;
     border-radius: 5px;
   }
 
-  .name {
+  .home-name {
     font-size: 50px;
     font-weight: 600;
-    color: var(--third-color);
+    color: var(--text-color);
+    margin-block: 20px;
   }
 
-  .subtitle {
-    font-size: 20px;
+  .home-text-info {
+    font-size: 15px;
     margin-bottom: 30px;
     color: var(--text-color);
   }
 
-  .text-btn {
+  .home-text-btn {
     display: flex;
     gap: 20px;
 
@@ -51,16 +52,19 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  width: 50%;
   min-height: 80vh;
+  width: 50%;
 
   .image {
+    margin: auto 0;
     width: 380px;
-    margin: 0 auto;
+    height: 380px;
+    border-radius: 55% 45% 55% 45%;
     overflow: hidden;
 
     img {
       width: 380px;
+      object-fit: cover;
     }
   }
 }
