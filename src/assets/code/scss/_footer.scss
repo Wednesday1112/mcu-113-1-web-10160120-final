@@ -4,24 +4,22 @@ footer {
   align-items: center;
   flex-direction: column;
   row-gap: 30px;
+  background: #f8f8f8;
   padding-block: 40px 60px;
 
   .top-footer {
-    font-size: 25px;
-    font-weight: 600;
-  }
+    .footer-menu {
+      display: flex;
 
-  .footer-menu {
-    display: flex;
+      .menu-item {
+        list-style: none;
 
-    .menu-item {
-      list-style: none;
-
-      a {
-        text-decoration: none;
-        color: var(--text-color);
-        font-weight: 500;
-        margin-inline: 20px;
+        a {
+          text-decoration: none;
+          color: var(--text-color);
+          font-weight: 500;
+          margin-inline: 20px;
+        }
       }
     }
   }
